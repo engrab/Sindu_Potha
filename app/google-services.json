@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "767095629049",
+    "firebase_url": "https://sindu-potha.firebaseio.com",
+    "project_id": "sindu-potha",
+    "storage_bucket": "sindu-potha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767095629049:android:e38fde9cc9740ee4",
+        "android_client_info": {
+          "package_name": "com.slsindupotha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767095629049-dhblk1rq4j25g5pmvmh3ctua98fghg3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGMffkdPjo2vYiAggk4PnRJB0lgGsPWDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767095629049-dhblk1rq4j25g5pmvmh3ctua98fghg3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

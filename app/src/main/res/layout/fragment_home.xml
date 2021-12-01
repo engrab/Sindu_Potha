@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.util.EnchantedViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator_unselected_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:ci_drawable="@drawable/selecteditem_dot"
+                    app:ci_drawable_unselected="@drawable/nonselecteditem_dot"
+                    app:ci_height="6dp"
+                    app:ci_width="6dp" />
+            </RelativeLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ad_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--            </LinearLayout>-->
+
+
+            <RelativeLayout
+                android:id="@+id/lay_cat_dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec_dash"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_3_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvUpdateDate"
+                    fontPath="fonts/helvetic.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="19dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/btn_new_msg"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="10sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txt_cat_video_rec3"
+                    fontPath="fonts/helvetic.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Last Check :"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    tools:ignore="MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_new_msg"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/nine.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/btn_check_new"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/more_button"
+                    android:layout_marginRight="7dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="MESSAGE"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_check_new"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/nine.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Check New Songs"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_cat_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec_rec"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_3_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cat_video_rec"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recent_story"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_cat_video_rec"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/more_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fad_shadow1_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_cat_video_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cat_video"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_cat_story"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_cat_video"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/more_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fad_shadow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_cat_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_latest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec2"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_latest_video"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_story"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_latest_video"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/more_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fad_shadow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_latest_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lay_dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec12"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_dash"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="fkdñf,a ¨yqvq oekaùï"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay_dash2"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+
+                <Button
+                    android:id="@+id/btn_luhudu"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="ලුහුඩු දැන්වීම්"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_Post_ad"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_Post_ad"
+                    style="?android:attr/buttonBarButtonStyle"
+
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="POST FREE AD"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn_luhudu"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.545"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lay_dash22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec212"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_dash2"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="276dp"
+                        android:layout_height="wrap_content"
+                        android:text="úfkdao fjkak tkak"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay_dash122"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+
+                <Button
+                    android:id="@+id/btn_Lottery"
+                    style="?android:attr/buttonBarButtonStyle"
+
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="ලොතරැයිය"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+
+                    app:layout_constraintStart_toEndOf="@+id/btn_ChatRoom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_ChatRoom"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Chat Room එක "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toStartOf="@+id/btn_Lottery"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lay_dash822"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+                <View
+                    android:id="@+id/line_rec2812"
+                    android:layout_width="4dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_line" />
+
+                <LinearLayout
+                    android:id="@+id/lay_1812"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_dash82"
+                        fontPath="fonts/ganga.TTF"
+                        android:layout_width="276dp"
+                        android:layout_height="wrap_content"
+                        android:text="w¨;au isxÿ we;=,;a lsÍu"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay_dash1822"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/pdlg_color_gray">
+
+
+                <Button
+                    android:id="@+id/btn_NewSong"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/more_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="නව ගීත ඇතුළත් කිරීම"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay_dash31822"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="62dp"
+                android:background="@color/pdlg_color_gray">
+
+
+                <Button
+                    android:id="@+id/btn_Msg"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="font/nine.otf"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="128dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:drawableLeft="@android:drawable/stat_notify_chat"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="(1)"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.312"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_sync"
+                    style="?android:attr/buttonBarButtonStyle"
+                    fontPath="font/nine.otf"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="210dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+
+                    android:drawableTop="@android:drawable/stat_notify_sync"
+                    android:paddingStart="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.312"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_Update"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                    fontPath="fonts/malithiweb.ttf"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/common_google_play_services_update_button"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.312"
+                    tools:ignore="MissingConstraints,MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nine"
+                    android:text="@string/app_ver"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

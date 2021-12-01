@@ -1,0 +1,618 @@
+[
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_bookmark_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_bookmark_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bookmark_border_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_bookmark_border_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_row_item_category.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/row_item_category.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_bookmark_border_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_bookmark_border_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_category.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_onesignal_large_icon_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_onesignal_large_icon_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_appicon_1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/appicon_1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_imo1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/imo1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_settings.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/settings.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_row_toolbar.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/row_toolbar.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_email_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_email_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_nonselecteditem_dot.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/nonselecteditem_dot.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_fb1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/fb1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_selecteditem_dot.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/selecteditem_dot.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ff.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ff.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_category.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/font_nine.otf.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/font/nine.otf"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_more.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_more.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_share.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_share.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_rate.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_rate.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_search.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_search.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_stat_onesignal_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_call.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_call.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_home.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_home.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_nav_item_bg.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/nav_item_bg.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_web.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_web.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_privacy.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_privacy.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_load.gif.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/load.gif"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/color_state_list.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/color/state_list.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_share_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_share_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_user_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_user_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/menu_menu_drawer.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/menu/menu_drawer.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_search.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_search.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_favourite.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_favourite.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_email_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_email_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/menu_menu_story.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/menu/menu_story.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bookmark_border_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_bookmark_border_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_rate.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_rate.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_share_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_share_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_favourite.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_favourite.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_message.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_message.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_row_recyclerview.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/row_recyclerview.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_story_details.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_story_details.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_category.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_row_item_home_recent_story.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/row_item_home_recent_story.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_appicon_1_250.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/appicon_1_250.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_latest.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_latest.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/font_malithi.ttf.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/font/malithi.ttf"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_rate.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_rate.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_stat_onesignal_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_privacy.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_privacy.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_left_nav_header.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/left_nav_header.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bookmark_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_bookmark_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_share_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_share_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_about_us.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_about_us.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_web.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_web.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_home.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_home.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_user_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_user_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_request_song.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/request_song.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_search.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_favourite.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_favourite.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_latest.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_latest.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_user_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_user_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_viber1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/viber1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_call.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_call.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_version.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_version.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_dialog_message.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/dialog_message.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_home_line.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/home_line.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_whtsp1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/whtsp1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_rate.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_rate.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_privacy.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_privacy.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_search.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_story_list_icon.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/story_list_icon.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_more.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_more.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_category.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_bookmark_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_bookmark_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_call.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_call.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_privacy.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_privacy.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_version.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_version.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_latest.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_latest.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_bookmark_border_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_bookmark_border_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_web.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_web.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_nav_item_border.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/nav_item_border.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_search.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_search.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_cont2.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/cont2.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_category.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_home.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_home.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/font_montserratsemibold.otf.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/font/montserratsemibold.otf"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_share.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_time.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_time.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_email_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_email_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/menu_menu_search.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/menu/menu_search.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_notice.jpg.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/notice.jpg"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_favourite.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_favourite.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_privacy.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_privacy.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_version.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_version.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_retry_page.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/retry_page.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_share.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_email_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_email_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_line_gradient.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/line_gradient.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_privacy_policy.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_privacy_policy.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-nodpi_inta1.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-nodpi/inta1.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_share_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_share_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_user_ab.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_user_ab.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_line_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/line_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_about.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_about.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_latest.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_latest.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_setting.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_setting.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_header_top_logo.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/header_top_logo.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_more.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_more.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_rate.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_rate.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_call.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_call.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_cursor.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/cursor.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_activity_category_item.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/activity_category_item.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_favourite.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_favourite.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_dialog_custom.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_exit_page.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/exit_page.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/menu_menu_main.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_custom_progressbar_drawable.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/custom_progressbar_drawable.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_splash.gif.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/splash.gif"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_share.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_share.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_native_ad_unit.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/native_ad_unit.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_more_button.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/more_button.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_slider_adapter.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/slider_adapter.xml"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_share.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_share.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bookmark_white_24dp.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_bookmark_white_24dp.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_version.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_version.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_home.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_home.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_web.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_web.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_mycard.jpg.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/mycard.jpg"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable_ic_no_item.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable/ic_no_item.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_latest.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ic_latest.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_home.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xhdpi/ic_home.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/layout_row_item_story.xml.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/layout/row_item_story.xml"
+    }
+]

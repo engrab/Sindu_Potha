@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Sindu Potha</string>
+    <string name="app_ver">Version 71</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+        <string name="ad_unit_Interstitial_facebook_">724621651433439_728401104388827</string>
+<!--        <string name="ad_unit_Interstitial_facebook_">724621651433439_728401104388827</string>-->
+    <!--    <string name="banner_facebook_ad_unitid">IMG_16_9_LINK#YOUR_PLACEMENT_ID</string>-->
+
+    <!--left navigation drawer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_category">ගායක ලැයිස්තුව</string>
+    <string name="menu_latest">සියලුම ගීත</string>
+    <string name="menu_favourite">ප්‍රියතම ගීත</string>
+    <string name="menu_about">ඇප් එක ගැන</string>
+    <string name="menu_more">අපේ අනෙකුත් ඇප්ස් </string>
+    <string name="menu_rate_app">Rate App</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_privacy">Privacy Policy</string>
+
+    <string name="no_item_found">No Item Found</string>
+    <string name="you_may">You may also like</string>
+
+    <string name="version">Version</string>
+    <string name="author">Author</string>
+    <string name="company">Company</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+
+    <!-- connection message -->
+    <string name="connection_msg1">Offline mode Activated.!!!</string>
+    <string name="no_data">කරුණාකර App එකෙන් ඉවත් වී නැවත උත්සාහ කරන්න. ඔබගේ දුරකතනයේ ඇති Storage Clean කරන ඇප් මගින් සිංදු පොත අවහිර කරනවාදැයි බලන්න.. එසේත් නොමැතිනම් අප වෙත Screenshot 1ක් ඒවා දැනුම් දෙන්න. WhatsApp / imo : 0755634842</string>
+    <string name="views_title">Views</string>
+
+    <string name="recent_story">ud kerUQ .S;</string>
+    <string name="latest_story">ish¨u .S;</string>
+    <string name="latest_cat_story">.dhl ,ehsia;=j</string>
+    <string name="more_btn">සියල්ලම බලන්න</string>
+
+    <string name="share_msg">Hi,I would like to share Application which is used to read amazing Sinhala songs free please download it from Google Play Store Free Here \n https://play.google.com/store/apps/details?id=</string>
+
+    <string name="favourite_add">Song has been Added to "ප්‍රියතම ගීත"</string>
+    <string name="favourite_remove">Song has been Romoved from "ප්‍රියතම ගීත"</string>
+
+    <!-- if you want to RTL then put it true other wise it false-->
+    <string name="isRTL">false</string>
+
+    <string name="admob_app_id">ca-app-pub-1189112443074391~5902485468</string>
+    <string name="play_more_apps">https://play.google.com/store/search?q=pub:MICROTEC&amp;c=apps</string>
+    <string name="privacy_url">http://apptific.com/PlayStore/Privacy-Policy.html</string>
+
+    <string name="text_no_item">No item available.</string>
+    <string name="tag_line">ප්‍රධන මෙනුව - Main Menu</string>
+
+    <string name="exit_msg">Are You Sure You Want To Quit?</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No       </string>
+
+    <string name="default_notification_channel_id">OnlineStory</string>
+    <string name="loading_msg">Loading..</string>
+    <string name="dialog_ok">OK</string>
+    <string name="wrong">something went to wrong please try again later</string>
+    <string name="dialog_error">Error..</string>
+    <string name="dialog_warning">Warning..</string>
+    <string name="dialog_success">Success</string>
+
+    <string name="restart_msg">Please restart your app something went to wrong</string>
+    <string name="load_native_ad">Load Native Ad</string>
+    <string name="load_other_native_ads">Check out more Native Ads examples in </string>
+    <string name="load_native_ads_hscroll">hScroll</string>
+    <string name="load_native_ads_template">Template</string>
+    <string name="load_native_ads_recycler">RecyclerView</string>
+    <string name="icon_desc">Ad icon</string>
+    <string name="image_desc">Ad image</string>
+    <string name="sponsored">Sponsored</string>
+    <string name="reload_native_ads_hscroll">Reload ads</string>
+
+    <string name="ad_loading">Loading an ad…</string>
+    <string name="ad_loaded">Ad loaded</string>
+    <string name="ad_load_failed">Ad failed to load: %s</string>
+    <string name="ad_clicked">Ad clicked</string>
+    <string name="license_msg">කරුණාකර ඔබගේ ගැටලුව අප වෙත දැනුම් දෙන්න.
+        email : kingsoftlanka@gmail.com
+ </string>
+
+
+    <string name="about_desc"><![CDATA[
+ <br/><img src="file:///android_res/drawable/mycard.jpg" width="100%"/>
+<br/><br/>
+Contact me on :<br/>
+<a href="fb://profile/100000414581731" style="text-decoration:none"><img src="file:///android_res/drawable/fb1.png" height="60px"/></a>   <a href="https://api.whatsapp.com/send?phone=94755634842" style="text-decoration:none"><img src="file:///android_res/drawable/whtsp1.png" height="60px"/></a> <a href="https://call.imo.im/Tharindu93" style="text-decoration:none"><img src="file:///android_res/drawable/imo1.png" height="60px"/></a> <a href="instagram://user?username=machan.max" style="text-decoration:none"> <img src="file:///android_res/drawable/inta1.png" height="60px"/></a>
+]]></string>
+
+    <string name="in_app_snack_bar_action_title">RESTART</string>
+    <string name="in_app_snack_bar_message">Update almost finished!</string>
+
+</resources>

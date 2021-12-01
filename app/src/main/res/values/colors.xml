@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#880E4F</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#880E4F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="navigation_default">#898989</color>
+    <color name="navigation_checked">#ffffff</color>
+
+    <color name="dtitle">#362F2F</color>
+    <color name="dsongline">#2E081F</color>
+    <color name="PINK">#FF0099</color>
+    <color name="blue">#1A237E</color>
+
+    <color name="navigation_item_bg_checked">#4A148C</color>
+    <color name="navigation_item_bg_default">#ffffff</color>
+
+    <color name="home_line_bg">#880E4F</color>
+    <color name="gray">#797979</color>
+
+    <color name="select_dot">#3f496e</color>
+    <color name="non_select_dot">#A5A5A5</color>
+
+    <color name="bg">#E7E7E7</color>
+    <color name="line">#f4f4f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="about_title">#353535</color>
+    <color name="about_text">#8D8D8D</color>
+
+    <color name="dialog_color">#3f496e</color>
+    <color name="dialog_text">#353535</color>
+    <color name="dialog_white_text">#FFFFFF</color>
+
+    <color name="in_app_snack_bar_text_color">#37474F</color>
+</resources>

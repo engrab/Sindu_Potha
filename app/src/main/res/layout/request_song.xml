@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#304769"
+     >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.slsindupotha.Feedback">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1101dp"
+        app:srcCompat="@drawable/notice" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="ඔබේ ප්‍රියතම ගීත සිංදු පොත ඇප් එකට ඇතුල් කරගැනීමට ඔබ කැමතිම ගිත අපට එවන්න.. සම්පුර්ණ ගීතය සිංහලෙන් type කර එවන්න...  සිංහල type කිරීම සදහා 'හෙළකුරු' app එක භාවිතා කරන්න.. ගීත ලබා දීමට පෙර ඔබ ඇතුලත් කරන ගීතය 'සිංදු පොතෙහි' තිබේදැයි පරික්ෂා කර බලන්න.  *ගීත ලබාදීමට පෙර ඔබගේ දුරකතනයේ Data ON කල යුතුය"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/etnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/ettitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="Song title"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/artistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="Artist name"
+        android:inputType="text"
+        android:padding="10dp" />
+
+
+
+    <EditText
+        android:id="@+id/etfull"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="Full song"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="55"
+        android:maxLines="100"
+        android:minLines="10"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:scrollbars="vertical"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#f05924"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

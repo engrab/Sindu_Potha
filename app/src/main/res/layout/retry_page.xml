@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:layout_constraintHeight_max="wrap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#4A148C">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:text="කණගාටුයි - ටිකක් ඉවසන්න"
+            android:textAlignment="center"
+            android:textColor="#FFF700"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back_ll"
+            android:background="#81004E"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rebooking_single_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:text="ලක්ෂ ගණනක රසික පිරිසක් මේ මොහොතේ සිංදු පොතට ඇතුළු වී සිටීම නිසා අපේ සිස්ටම් එක ඩවුන් වෙලා තියෙන්නේ. \n\n තරහ නැතුව මෙතන තියෙන RETRY බොත්තම ඔබන්න. කොයි වෙලේ හරි ඇතුලට යනකම් RETRY බොත්තම ඔබන්න. \n\nබැරිම උනොත් අපිට කියන්න. \nWhastapp / Imo : 0755634842"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/end_time_recycle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#0B0000" />
+            <LinearLayout
+                android:id="@+id/rebooking_back_button_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#004D40"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ok_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".49"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="RETRY"
+                    android:textAlignment="center"
+                    android:textColor="#F8D700"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".01"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/end_time_recycle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#8F8F8F" />
+                <TextView
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:text="Contact us"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

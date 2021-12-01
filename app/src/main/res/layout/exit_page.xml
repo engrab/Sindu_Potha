@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:layout_constraintHeight_max="wrap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#4A148C">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:text="සිංදු පොත දාල යනවද..?"
+            android:textAlignment="center"
+            android:textColor="#FFF700"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back_ll"
+            android:background="#81004E"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rebooking_single_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:text="App එක හොඳ නැති නිසාද යන්නේ.? කමක් නෑ යන්නකෝ. අඩුපාඩු තියෙනවනම් අපිට කියන්න. \n\n App එක හොඳයිනම් Play Store එකේ අපිට තරු 5ක් දෙන්න. දුන්නේ නෑ කියල තරහා නෑ. කොරෝනා ඉවර වෙනකම් පරිස්සමට ඉන්න. \n ජය වේවා. සුබ දවසක්."
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/end_time_recycle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#0B0000" />
+            <LinearLayout
+                android:id="@+id/rebooking_back_button_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#004D40"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ok_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".49"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="EXIT"
+                    android:textAlignment="center"
+                    android:textColor="#F8D700"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".01"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/end_time_recycle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#8F8F8F" />
+                <TextView
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:text="Play Store"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
