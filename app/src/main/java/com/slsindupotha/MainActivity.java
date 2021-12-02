@@ -92,15 +92,15 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         TapdaqConfig config = Tapdaq.getInstance().config();
 
         config.setUserSubjectToGdprStatus(STATUS.TRUE); //GDPR declare if user is in EU
         config.setConsentStatus(STATUS.TRUE); //GDPR consent must be obtained from the user
         config.setAgeRestrictedUserStatus(STATUS.FALSE); //Is user subject to COPPA or GDPR age restrictions
 
-        Tapdaq.getInstance().initialize(this, getString(R.string.admob_AppID), getString(R.string.CLIENT_KEY), config, new TapdaqInitListener());
+        Tapdaq.getInstance().initialize(this, "61a896f208fe6c2d735d7485", "01286d5d-854d-48d7-a1cc-ed9ea5aa8a1c", config, new TapdaqInitListener());
 
-        loadBanner();
 //        AudienceNetworkAds.initialize(this);
 //        ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 //        scheduler.scheduleAtFixedRate(new Runnable() {
@@ -286,6 +286,7 @@ public class MainActivity extends BaseActivity {
             // Ads may now be requested
             TapdaqAdsUtils.loadInterstitial(MainActivity.this);
             TapdaqAdsUtils.showInterstitial(MainActivity.this);
+            loadBanner();
         }
 
         @Override

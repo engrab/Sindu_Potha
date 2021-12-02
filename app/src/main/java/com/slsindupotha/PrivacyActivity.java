@@ -16,6 +16,9 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 import com.util.API;
 import com.util.Constant;
 import com.util.IsRTL;
@@ -36,6 +39,20 @@ public class PrivacyActivity extends BaseActivity {
     WebView webView;
     String htmlPrivacy;
     int mode;
+    TMBannerAdView adView;
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy(this);
+        }
+        super.onDestroy();
+    }
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -46,6 +63,7 @@ public class PrivacyActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privacy_policy);
+        loadBanner();
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         int font=pref.getInt("font",0);
         mode=pref.getInt("mode",1);

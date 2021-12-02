@@ -15,13 +15,29 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
+
 
 public class Add_NewSongs extends AppCompatActivity {
 
     private WebView webview ;
     private ProgressBar spinner;
-//    private AdView adView;
+    TMBannerAdView adView;
+    private void loadBanner() {
 
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy(this);
+        }
+        super.onDestroy();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +45,7 @@ public class Add_NewSongs extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Add New Songs ");
         setSupportActionBar(toolbar);
+        loadBanner();
 //        adView = new AdView(this, "724621651433439_781685875727016", AdSize.BANNER_HEIGHT_50);
         toolbar.setTitleTextAppearance(this, R.style.RobotoTextViewStyle);
 
@@ -54,7 +71,7 @@ public class Add_NewSongs extends AppCompatActivity {
 
 
 
-        LinearLayout adContainer = findViewById(R.id.adView_story_banner);
+//        LinearLayout adContainer = findViewById(R.id.adView_story_banner);
 
         // Add the ad view to your activity layout
 //        adContainer.addView(adView);

@@ -18,6 +18,9 @@ import com.adapter.StoryAdapter;
 import com.db.DatabaseHelperRecent;
 import com.item.ItemStory;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 import com.util.IsRTL;
 import com.util.ItemOffsetDecoration;
 
@@ -34,10 +37,17 @@ public class ActivityRecent extends BaseActivity {
     Toolbar toolbar;
     LinearLayout adLayout;
     DatabaseHelperRecent databaseHelperRecent;
+    TMBannerAdView adView;
 
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
     }
 
     @Override
@@ -47,7 +57,7 @@ public class ActivityRecent extends BaseActivity {
         IsRTL.ifSupported(ActivityRecent.this);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("මා නැරඹු ගීත");
-
+        loadBanner();
 //        AudienceNetworkAds.initialize(this);
 //        adView = new AdView(this, "724621651433439_729021350993469", AdSize.BANNER_HEIGHT_50);
         // Find the Ad Container
@@ -121,9 +131,9 @@ public class ActivityRecent extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-//        if (adView != null) {
-//            adView.destroy();
-//        }
+        if (adView != null) {
+            adView.destroy(this);
+        }
         super.onDestroy();
     }
 

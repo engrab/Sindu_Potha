@@ -112,30 +112,30 @@ public class MyApplication extends Application {
 
 
 
-    private class ExampleNotificationOpenedHandler implements OneSignal.OSNotificationWillShowInForegroundHandler {
-
-
-        @Override
-        public void notificationWillShowInForeground(OSNotificationReceivedEvent notificationReceivedEvent) {
-            OSNotification notification = notificationReceivedEvent.getNotification();
-            JSONObject data = notification.getAdditionalData();
-            String customKey;
-            if (data != null) {
-                customKey = data.optString("story_id", null);
-                if (customKey != null) {
-                    if (!customKey.equals("0")) {
-                        Intent intent = new Intent(MyApplication.this, StoryDetailsActivity.class);
-                        intent.putExtra("Id", customKey);
-                        intent.putExtra("isNotification", true);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
-                    } else {
-                        Intent intent = new Intent(MyApplication.this, SplashActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
-                    }
-                }
-            }
-        }
-    }
+//    private class ExampleNotificationOpenedHandler implements OneSignal.OSNotificationWillShowInForegroundHandler {
+//
+//
+//        @Override
+//        public void notificationWillShowInForeground(OSNotificationReceivedEvent notificationReceivedEvent) {
+//            OSNotification notification = notificationReceivedEvent.getNotification();
+//            JSONObject data = notification.getAdditionalData();
+//            String customKey;
+//            if (data != null) {
+//                customKey = data.optString("story_id", null);
+//                if (customKey != null) {
+//                    if (!customKey.equals("0")) {
+//                        Intent intent = new Intent(MyApplication.this, StoryDetailsActivity.class);
+//                        intent.putExtra("Id", customKey);
+//                        intent.putExtra("isNotification", true);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        startActivity(intent);
+//                    } else {
+//                        Intent intent = new Intent(MyApplication.this, SplashActivity.class);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        startActivity(intent);
+//                    }
+//                }
+//            }
+//        }
+//    }
 }

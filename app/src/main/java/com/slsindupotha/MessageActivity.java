@@ -20,6 +20,9 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.db.DatabaseHelper;
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 
 
 public class MessageActivity extends BaseActivity {
@@ -36,6 +39,20 @@ public class MessageActivity extends BaseActivity {
     ProgressBar mProgressBar;
     ImageView ImgStory;
     int mode;
+    TMBannerAdView adView;
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy(this);
+        }
+        super.onDestroy();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +61,7 @@ public class MessageActivity extends BaseActivity {
       //  IsRTL.ifSupported(MessageActivity.this);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        loadBanner();
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         int font=pref.getInt("font",50);
         mode=pref.getInt("mode",1);

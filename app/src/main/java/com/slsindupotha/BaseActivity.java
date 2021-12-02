@@ -8,6 +8,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.util.TapdaqAdsUtils;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -44,7 +46,7 @@ public class BaseActivity extends AppCompatActivity {
                 Log.i("hello", "world");
                 runOnUiThread(new Runnable() {
                     public void run() {
-                        interAD();
+//                        interAD();
 
                     }
                 });
@@ -58,7 +60,10 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-    public void interAD() {
+//    public void interAD() {
+
+//        TapdaqAdsUtils.showInterstitial(BaseActivity.this);
+
 //        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
 //            @Override
 //            public void onInterstitialDisplayed(Ad ad) {
@@ -106,6 +111,6 @@ public class BaseActivity extends AppCompatActivity {
 //                        .withAdListener(interstitialAdListener)
 //                        .build());
 
-    }
+//    }
 
 }

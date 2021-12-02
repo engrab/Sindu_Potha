@@ -15,12 +15,29 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
+
 
 public class Luhudu_Post_Ad extends AppCompatActivity {
 
     private WebView webview ;
     private ProgressBar spinner;
-//    private AdView adView;
+    TMBannerAdView adView;
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy(this);
+        }
+        super.onDestroy();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +46,7 @@ public class Luhudu_Post_Ad extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Luhudu.lk");
         setSupportActionBar(toolbar);
+        loadBanner();
 //        adView = new AdView(this, "724621651433439_781668519062085", AdSize.BANNER_HEIGHT_50);
         toolbar.setTitleTextAppearance(this, R.style.RobotoTextViewStyle);
 

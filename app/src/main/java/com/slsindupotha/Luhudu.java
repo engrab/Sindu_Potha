@@ -15,13 +15,31 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 
 
 public class Luhudu extends AppCompatActivity {
 
-    private WebView webview ;
+    private WebView webview;
     private ProgressBar spinner;
-//    private AdView adView;
+    TMBannerAdView adView;
+
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (adView != null) {
+            adView.destroy(this);
+        }
+        super.onDestroy();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +49,18 @@ public class Luhudu extends AppCompatActivity {
         toolbar.setTitle("Luhudu.lk");
         setSupportActionBar(toolbar);
         toolbar.setTitleTextAppearance(this, R.style.RobotoTextViewStyle);
-
+        loadBanner();
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
         final Window win = getWindow();
-        win.addFlags( WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
+        win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
-                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON );
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
 
-        webview =(WebView)findViewById(R.id.webView);
-        spinner = (ProgressBar)findViewById(R.id.progressBar);
+        webview = (WebView) findViewById(R.id.webView);
+        spinner = (ProgressBar) findViewById(R.id.progressBar);
         webview.setWebViewClient(new CustomWebViewClient());
 
         webview.getSettings().setJavaScriptEnabled(true);
@@ -53,7 +71,6 @@ public class Luhudu extends AppCompatActivity {
         webview.setVisibility(View.GONE);
 
 
-
         LinearLayout adContainer = findViewById(R.id.adView_story_banner);
 
         // Add the ad view to your activity layout
@@ -62,18 +79,16 @@ public class Luhudu extends AppCompatActivity {
     }
 
 
-
     // This allows for a splash screen
     // (and hide elements once the page loads)
     private class CustomWebViewClient extends WebViewClient {
 
         @Override
         public void onPageStarted(WebView webview, String url, Bitmap favicon) {
-          //  spinner.setVisibility(View.GONE);
+            //  spinner.setVisibility(View.GONE);
             webview.setVisibility(webview.INVISIBLE);
-           // spinner.setVisibility(View.VISIBLE);
+            // spinner.setVisibility(View.VISIBLE);
         }
-
 
 
         @Override
@@ -97,6 +112,7 @@ public class Luhudu extends AppCompatActivity {
         }
         return true;
     }
+
     public void setActivityBackgroundColor(int color) {
         View view = this.getWindow().getDecorView();
         view.setBackgroundColor(color);

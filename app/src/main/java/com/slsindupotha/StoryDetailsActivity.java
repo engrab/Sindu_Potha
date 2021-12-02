@@ -32,6 +32,9 @@ import com.db.DatabaseHelperRecent;
 
 import com.item.ItemStory;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 import com.util.IsRTL;
 import com.squareup.picasso.Picasso;
 
@@ -57,6 +60,14 @@ public class StoryDetailsActivity extends BaseActivity {
     final Handler handler = new Handler();
     ImageView ImgStory;
     int mode;
+    TMBannerAdView adView;
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+
     private final String TAG = MainActivity.class.getSimpleName();
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -67,6 +78,7 @@ public class StoryDetailsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_details);
+        loadBanner();
 //        AudienceNetworkAds.initialize(this);
 //        adView = new AdView(this, "724621651433439_729074457654825", AdSize.BANNER_HEIGHT_50);
 //        LinearLayout adContainer = (LinearLayout) findViewById(R.id.adView_story_banner);
@@ -292,9 +304,9 @@ public class StoryDetailsActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-//        if (adView != null) {
-//            adView.destroy();
-//        }
+        if (adView != null) {
+            adView.destroy(this);
+        }
         super.onDestroy();
     }
 

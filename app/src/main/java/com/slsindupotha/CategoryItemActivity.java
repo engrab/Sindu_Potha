@@ -10,6 +10,7 @@ import android.os.Handler;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,6 +24,9 @@ import com.adapter.StoryAdapter;
 import com.db.DataBaseRlmaxAll;
 import com.item.ItemStory;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 import com.util.IsRTL;
 import com.util.ItemOffsetDecoration;
 
@@ -41,13 +45,22 @@ public class CategoryItemActivity extends BaseActivity {
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     String Id, Name;
-   // LinearLayout mAdViewLayout;
+    // LinearLayout mAdViewLayout;
 //   private AdView adView;
     DataBaseRlmaxAll dataBaseRlmaxAll;
-    int callBack  = 0;
+    int callBack = 0;
+    TMBannerAdView adView;
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
+
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
     }
 
     @Override
@@ -57,6 +70,7 @@ public class CategoryItemActivity extends BaseActivity {
         IsRTL.ifSupported(CategoryItemActivity.this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        loadBanner();
 //        AudienceNetworkAds.initialize(this);
         dataBaseRlmaxAll = new DataBaseRlmaxAll(this);
 //        adView = new AdView(this, "724621651433439_729073764321561", AdSize.BANNER_HEIGHT_50);
@@ -67,8 +81,8 @@ public class CategoryItemActivity extends BaseActivity {
 //        adView.loadAd();
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
-        int font=pref.getInt("font",0);
-        int mode=pref.getInt("mode",1);
+        int font = pref.getInt("font", 0);
+        int mode = pref.getInt("mode", 1);
         toolbar.setTitleTextAppearance(this, R.style.RobotoTextViewStyle);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -77,9 +91,9 @@ public class CategoryItemActivity extends BaseActivity {
         }
 
         final Window win = getWindow();
-        win.addFlags( WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
+        win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
-                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON );
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
 
         Intent intent = getIntent();
         Id = intent.getStringExtra("Id");
@@ -89,10 +103,10 @@ public class CategoryItemActivity extends BaseActivity {
         lyt_not_found = findViewById(R.id.lyt_not_found);
         progressBar = findViewById(R.id.progressBar);
         recyclerView = findViewById(R.id.vertical_courses_list);
-        if(mode==1){
+        if (mode == 1) {
             recyclerView.setBackgroundColor(Color.BLACK);
         }
-       // lyt_not_found.setBackgroundColor(Color.BLACK);
+        // lyt_not_found.setBackgroundColor(Color.BLACK);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(CategoryItemActivity.this, LinearLayoutManager.VERTICAL, false));
         ItemOffsetDecoration itemDecoration = new ItemOffsetDecoration(CategoryItemActivity.this, R.dimen.item_offset);
@@ -106,10 +120,8 @@ public class CategoryItemActivity extends BaseActivity {
 //        }
         mListItem = dataBaseRlmaxAll.getStoryByCatId(Id);
         //if(!mListItem.isEmpty()){
-            displayData();
-       // }
-
-
+        displayData();
+        // }
 
 
     }
@@ -127,7 +139,7 @@ public class CategoryItemActivity extends BaseActivity {
                 callBack = myApplication.getContactsManager().loadingCat;
                 handler.postDelayed(this, 2000);
                 adapter.updateList(dataBaseRlmaxAll.getStoryByCatId(Id));
-                if(callBack == 3) {
+                if (callBack == 3) {
                     adapter.updateList(dataBaseRlmaxAll.getStoryByCatId(Id));
                     showProgress(false);
                     handler.removeCallbacks(this);
@@ -135,14 +147,14 @@ public class CategoryItemActivity extends BaseActivity {
             }
 
         };
-        if(callBack ==2 ) {
+        if (callBack == 2) {
             showProgress(true);
             handler.post(task);
 
         }
 
         if (adapter.getItemCount() == 0) {
-          //  lyt_not_found.setVisibility(View.VISIBLE);
+            //  lyt_not_found.setVisibility(View.VISIBLE);
         } else {
             lyt_not_found.setVisibility(View.GONE);
         }
@@ -152,7 +164,7 @@ public class CategoryItemActivity extends BaseActivity {
         if (show) {
 
             progressBar.setVisibility(View.VISIBLE);
-          //  recyclerView.setVisibility(View.GONE);
+            //  recyclerView.setVisibility(View.GONE);
             lyt_not_found.setVisibility(View.GONE);
         } else {
             progressBar.setVisibility(View.GONE);
@@ -179,9 +191,9 @@ public class CategoryItemActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-//        if (adView != null) {
-//            adView.destroy();
-//        }
+        if (adView != null) {
+            adView.destroy(this);
+        }
         super.onDestroy();
     }
 

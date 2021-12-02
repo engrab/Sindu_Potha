@@ -13,8 +13,8 @@ repositories {
 }
 
 apply plugin: 'com.android.application'
-//apply plugin: 'com.google.gms.google-services'
-//apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 31
@@ -34,20 +34,10 @@ android {
         multiDexEnabled true
     }
     buildTypes {
-        debug {
-            resValue 'string', 'CLIENT_KEY', '"ca-app-pub-3940256099942544~3347511713"'
-            resValue 'string', 'admob_AppID', '"ca-app-pub-3940256099942544~3347511713"'
-            resValue 'string', 'admob_banner', '"ca-app-pub-3940256099942544/6300978111"'
-            resValue 'string', 'admob_interstitial', '"ca-app-pub-3940256099942544/1033173712"'
 
-        }
 
         release {
             minifyEnabled false
-            resValue 'string', 'CLIENT_KEY', '"ca-app-pub-1189112443074391~5902485468"'
-            resValue 'string', 'admob_AppID', '"ca-app-pub-1189112443074391~5902485468"'
-            resValue 'string', 'admob_banner', '"IMG_16_9_LINK#YOUR_PLACEMENT_ID"'
-            resValue 'string', 'admob_interstitial', '"724621651433439_728401104388827"'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
         }
@@ -114,9 +104,7 @@ dependencies {
     //Tapdaq
     implementation 'com.tapdaq.sdk:Tapdaq-BaseSDK:7.9.1'
     //Adapters - These will automatically pull ad network dependencies
-
-    implementation 'com.tapdaq.sdk:TapdaqAdMobAdapter:7.9.1'
-
+    
     implementation 'com.tapdaq.sdk:TapdaqFANAdapter:7.9.1'
 
 

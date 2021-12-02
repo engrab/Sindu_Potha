@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+
 import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,10 +23,14 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+
 import com.adapter.StoryAdapter;
 import com.db.DataBaseRlmaxAll;
 import com.item.ItemStory;
 
+import com.tapdaq.sdk.TMBannerAdView;
+import com.tapdaq.sdk.common.TMBannerAdSizes;
+import com.tapdaq.sdk.listeners.TMAdListener;
 import com.util.Constant;
 import com.util.IsRTL;
 import com.util.ItemOffsetDecoration;
@@ -49,9 +54,18 @@ public class SearchActivity extends BaseActivity {
     private LinearLayout lyt_not_found;
     String Search;
     Toolbar toolbar;
-   // LinearLayout mAdViewLayout;
+    // LinearLayout mAdViewLayout;
     DataBaseRlmaxAll dataBaseRlmaxAll;
-//    private AdView adView;
+    //    private AdView adView;
+    TMBannerAdView adView;
+
+    private void loadBanner() {
+
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
+
+    }
+
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -62,12 +76,13 @@ public class SearchActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_item);
+        loadBanner();
 //        adView = new AdView(this, "724621651433439_729021097660161", AdSize.BANNER_HEIGHT_50);
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         dataBaseRlmaxAll = new DataBaseRlmaxAll(this);
-        int font=pref.getInt("font",0);
-        int mode=pref.getInt("mode",1);
-        if(mode==1){
+        int font = pref.getInt("font", 0);
+        int mode = pref.getInt("mode", 1);
+        if (mode == 1) {
             setActivityBackgroundColor(Color.BLACK);
         }
         IsRTL.ifSupported(SearchActivity.this);
@@ -81,9 +96,9 @@ public class SearchActivity extends BaseActivity {
         }
 
         final Window win = getWindow();
-        win.addFlags( WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
+        win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
-                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON );
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
 
         Intent intent = getIntent();
         Search = intent.getStringExtra("search");
@@ -91,7 +106,7 @@ public class SearchActivity extends BaseActivity {
         lyt_not_found = findViewById(R.id.lyt_not_found);
         progressBar = findViewById(R.id.progressBar);
         recyclerView = findViewById(R.id.vertical_courses_list);
-        if(mode==1){
+        if (mode == 1) {
             recyclerView.setBackgroundColor(Color.BLACK);
         }
         recyclerView.setHasFixedSize(true);
@@ -105,13 +120,13 @@ public class SearchActivity extends BaseActivity {
 //        if (JsonUtils.isNetworkAvailable(SearchActivity.this)) {
 //            new getSearch(API.toBase64(jsObj.toString())).execute(Constant.API_URL);
 //        }
-       mListItem = dataBaseRlmaxAll.getStorySearch(Search);
-        if(!mListItem.isEmpty()){
+        mListItem = dataBaseRlmaxAll.getStorySearch(Search);
+        if (!mListItem.isEmpty()) {
             displayData();
         }
 
-       // mAdViewLayout = findViewById(R.id.adView);
-        LinearLayout adContainer = findViewById(R.id.adView_story_banner);
+        // mAdViewLayout = findViewById(R.id.adView);
+//        LinearLayout adContainer = findViewById(R.id.adView_story_banner);
 
         // Add the ad view to your activity layout
 //        adContainer.addView(adView);
@@ -140,7 +155,7 @@ public class SearchActivity extends BaseActivity {
 //
 //        // Request an ad
 //        adView.loadAd();
-      //  BannerAds.ShowBannerAds(SearchActivity.this, mAdViewLayout);
+        //  BannerAds.ShowBannerAds(SearchActivity.this, mAdViewLayout);
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -218,8 +233,8 @@ public class SearchActivity extends BaseActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_search, menu);
-       final MenuItem searchMenuItem = menu.findItem(R.id.search);
-       searchMenuItem.expandActionView();
+        final MenuItem searchMenuItem = menu.findItem(R.id.search);
+        searchMenuItem.expandActionView();
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
 
 //        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
@@ -240,7 +255,7 @@ public class SearchActivity extends BaseActivity {
             public boolean onQueryTextSubmit(String arg0) {
                 // TODO Auto-generated method stub
                 mListItem = dataBaseRlmaxAll.getStorySearch(arg0);
-                if(!mListItem.isEmpty()){
+                if (!mListItem.isEmpty()) {
                     displayData();
                 }
                 searchView.clearFocus();
@@ -251,7 +266,7 @@ public class SearchActivity extends BaseActivity {
             public boolean onQueryTextChange(String arg0) {
                 // TODO Auto-generated method stub
                 mListItem = dataBaseRlmaxAll.getStorySearch(arg0);
-                if(!mListItem.isEmpty()){
+                if (!mListItem.isEmpty()) {
                     displayData();
                 }
                 return false;
@@ -272,6 +287,7 @@ public class SearchActivity extends BaseActivity {
         }
         return true;
     }
+
     public void setActivityBackgroundColor(int color) {
         View view = this.getWindow().getDecorView();
         view.setBackgroundColor(color);
@@ -279,9 +295,9 @@ public class SearchActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-//        if (adView != null) {
-//            adView.destroy();
-//        }
+        if (adView != null) {
+            adView.destroy(this);
+        }
         super.onDestroy();
     }
 }
