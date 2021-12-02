@@ -38,6 +38,7 @@ import com.fragment.CategoryFragment;
 import com.fragment.FavouriteFragment;
 import com.fragment.HomeFragment;
 import com.fragment.LatestFragment;
+import com.tapdaq.sdk.adnetworks.TMMediationNetworks;
 import com.util.API;
 //import com.util.BannerAds;
 import com.util.Constant;
@@ -51,6 +52,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -100,7 +102,8 @@ public class MainActivity extends BaseActivity {
         config.setAgeRestrictedUserStatus(STATUS.FALSE); //Is user subject to COPPA or GDPR age restrictions
 
         Tapdaq.getInstance().initialize(this, "61a896f208fe6c2d735d7485", "01286d5d-854d-48d7-a1cc-ed9ea5aa8a1c", config, new TapdaqInitListener());
-
+//        config.registerTestDevices(TMMediationNetworks.FACEBOOK, Arrays.asList("65866e73-b1dd-480a-bf2e-027529390889"));
+//        Tapdaq.getInstance().startTestActivity(MainActivity.this);
 //        AudienceNetworkAds.initialize(this);
 //        ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 //        scheduler.scheduleAtFixedRate(new Runnable() {
