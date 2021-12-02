@@ -16,12 +16,12 @@
         "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-mdpi/ic_bookmark_border_white_24dp.png"
     },
     {
-        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_stat_onesignal_default.png.flat",
         "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxxhdpi/ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_category.png.flat",
@@ -80,12 +80,12 @@
         "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-hdpi/ff.png"
     },
     {
-        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_category.png.flat",
-        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_category.png"
-    },
-    {
         "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/font_nine.otf.flat",
         "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/font/nine.otf"
+    },
+    {
+        "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_category.png.flat",
+        "source": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/src/main/res/drawable-xxhdpi/ic_category.png"
     },
     {
         "merged": "/home/ayliya/Android/Projects/fiver/Sindu_Potha/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_more.png.flat",
