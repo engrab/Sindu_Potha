@@ -29,8 +29,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.tapdaq.sdk.TMBannerAdView
+                android:id="@+id/adBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
 
     </RelativeLayout>
@@ -44,7 +49,7 @@
         app:headerLayout="@layout/left_nav_header"
         app:itemBackground="@drawable/nav_item_bg"
         app:itemIconTint="@color/state_list"
-        app:itemTextColor="@color/state_list"
         app:itemTextAppearance="@style/RobotoTextViewStyle"
+        app:itemTextColor="@color/state_list"
         app:menu="@menu/menu_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>

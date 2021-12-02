@@ -1,5 +1,6 @@
 package com.adapter;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -27,6 +28,7 @@ import com.util.Constant;
 import com.util.JsonUtils;
 
 import com.squareup.picasso.Picasso;
+import com.util.TapdaqAdsUtils;
 
 import java.util.ArrayList;
 
@@ -36,7 +38,7 @@ import java.util.ArrayList;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ItemRowHolder> {
 
     private ArrayList<ItemCategory> dataList;
-    private Context mContext;
+    private final Context mContext;
     // private InterstitialAd mInterstitial;
     private ProgressDialog pDialog;
     int mode;
@@ -82,11 +84,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ItemRo
 //                interstitialAd.loadAd();
                 if (HomeAdsCount.AD_COUNT == 7) {
 
-//                    if (interstitialAd.isAdLoaded()) {
-//                        interstitialAd.show();
-//                    } else {
-//                        Log.d("mytag", "onClick: nit load ad");
-//                    }
+                    TapdaqAdsUtils.showInterstitial((Activity) mContext);
 
                     HomeAdsCount.AD_COUNT = 0;
                     Log.d("mytag", "onClick: after " + HomeAdsCount.AD_COUNT);

@@ -1,5 +1,6 @@
 package com.adapter;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +27,7 @@ import com.slsindupotha.R;
 import com.slsindupotha.StoryDetailsActivity;
 import com.util.Constant;
 import com.util.JsonUtils;
+import com.util.TapdaqAdsUtils;
 
 
 import java.util.ArrayList;
@@ -78,11 +80,7 @@ public class HomeRecentAdapter extends RecyclerView.Adapter<HomeRecentAdapter.It
 //                interstitialAd.loadAd();
                 if (HomeAdsCount.AD_COUNT == 7) {
 
-//                    if (interstitialAd.isAdLoaded()) {
-//                        interstitialAd.show();
-//                    } else {
-//                        Log.d("mytag", "onClick: nit load ad");
-//                    }
+                    TapdaqAdsUtils.showInterstitial((Activity) mContext);
 
                     HomeAdsCount.AD_COUNT = 0;
                     Log.d("mytag", "onClick: after " + HomeAdsCount.AD_COUNT);

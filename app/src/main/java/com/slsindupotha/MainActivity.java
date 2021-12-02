@@ -61,6 +61,11 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 //import com.util.SinduPothaAppUpdate;
 
+import com.tapdaq.sdk.*;
+import com.tapdaq.sdk.common.*;
+import com.tapdaq.sdk.listeners.*;
+import com.util.TapdaqAdsUtils;
+
 public class MainActivity extends BaseActivity {
     private static MainActivity instance;
     private DrawerLayout drawerLayout;
@@ -71,6 +76,7 @@ public class MainActivity extends BaseActivity {
     NavigationView navigationView;
     final Handler handler = new Handler();
     int mode;
+    TMBannerAdView adView;
 
     //    private AppUpdateManager appUpdateManager;
     @Override
@@ -85,6 +91,16 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TapdaqConfig config = Tapdaq.getInstance().config();
+
+        config.setUserSubjectToGdprStatus(STATUS.TRUE); //GDPR declare if user is in EU
+        config.setConsentStatus(STATUS.TRUE); //GDPR consent must be obtained from the user
+        config.setAgeRestrictedUserStatus(STATUS.FALSE); //Is user subject to COPPA or GDPR age restrictions
+
+        Tapdaq.getInstance().initialize(this, getString(R.string.admob_AppID), getString(R.string.CLIENT_KEY), config, new TapdaqInitListener());
+
+        loadBanner();
 //        AudienceNetworkAds.initialize(this);
 //        ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 //        scheduler.scheduleAtFixedRate(new Runnable() {
@@ -245,6 +261,9 @@ public class MainActivity extends BaseActivity {
         actionBarDrawerToggle.syncState();
     }
 
+
+
+
     public static MainActivity getInstance() {
         return instance;
     }
@@ -253,9 +272,28 @@ public class MainActivity extends BaseActivity {
         isRunning = flag;
         // do something...
     }
+    private void loadBanner() {
 
+        adView = (TMBannerAdView) findViewById(R.id.adBanner);
+        adView.load(this, TMBannerAdSizes.STANDARD, new TMAdListener());
 
+    }
 
+    public class TapdaqInitListener extends TMInitListener {
+
+        public void didInitialise() {
+            super.didInitialise();
+            // Ads may now be requested
+            TapdaqAdsUtils.loadInterstitial(MainActivity.this);
+            TapdaqAdsUtils.showInterstitial(MainActivity.this);
+        }
+
+        @Override
+        public void didFailToInitialise(TMAdError error) {
+            super.didFailToInitialise(error);
+            //Tapdaq failed to initialise
+        }
+    }
 
 
     public void showToast() {
@@ -497,9 +535,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-//        if (adView != null) {
-//            adView.destroy();
-//        }
+        if (adView != null) {
+            adView.destroy(this);
+        }
         super.onDestroy();
     }
 
