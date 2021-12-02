@@ -86,7 +86,6 @@ com/slsindupotha/SplashActivity.java
 com/slsindupotha/MyApplication.java
  com.slsindupotha.MyApplication
  com.slsindupotha.MyApplication$1
- com.slsindupotha.MyApplication$ExampleNotificationOpenedHandler
 com/common/HomeAdsCount.java
  com.common.HomeAdsCount
 com/fragment/FavouriteFragment.java
@@ -128,6 +127,10 @@ com/slsindupotha/PrivacyActivity.java
  com.slsindupotha.PrivacyActivity$MyTaskAbout
 com/interfaces/OnBackPressed.java
  com.interfaces.OnBackPressed
+com/util/TapdaqAdsUtils.java
+ com.util.TapdaqAdsUtils
+ com.util.TapdaqAdsUtils$InterstitialListener
+ com.util.TapdaqAdsUtils$VideoListener
 com/fragment/LatestFragment.java
  com.fragment.LatestFragment
  com.fragment.LatestFragment$1
@@ -150,6 +153,7 @@ com/slsindupotha/MainActivity.java
  com.slsindupotha.MainActivity$2
  com.slsindupotha.MainActivity$3
  com.slsindupotha.MainActivity$4
+ com.slsindupotha.MainActivity$TapdaqInitListener
  com.slsindupotha.MainActivity$getAdSetting
 com/fragment/HomeFragment.java
  com.fragment.HomeFragment
